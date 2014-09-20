@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="vendors/jquery.mobile/jquery.mobile-1.1.1.min.css"/>
+    <link rel="stylesheet" href="resources/css/twitter-timeline.css" />
+    <title>PyFox</title>
+    <link rel="stylesheet" type="text/css" media="all" href="static/codemirror.css">
+    <link rel="stylesheet" type="text/css" media="all" href="static/solarized.css">
+    <link rel="stylesheet" type="text/css" media="all" href="static/main.css">
+    <script src="vendors/jquery.mobile/jquery-1.7.1.min.js"></script>
+    <script src="vendors/jquery.mobile/jquery.mobile-1.1.1.min.js"></script>
+    <script type="text/javascript" src="static/jquery.min.js"></script>
+    <script src="static/codemirrorepl.js" type="text/javascript"></script>
+    <script src="static/repl.js" type="text/javascript"></script>
+    <script src="static/python.js" type="text/javascript"></script>
+    <script src="static/env/editor.js" type="text/javascript"></script>
+    <script src="static/skulpt.min.js" type="text/javascript"></script>
+    <script src="static/skulpt-stdlib.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="twitter-timeline" data-role="page"><!-- page -->
+            <div data-role="header" data-position="fixed" id="myheader"><!-- header -->
+                <h1>PyFox Editor</h1>
+            </div>
+
+
+
+<div class="page">
+<div class="body">
+<div class="main">
+    
+    <div id="quickdocs" style="display: none">
+        <ul>
+            <li>cut/copy/paste/undo/redo with the usual shortcut keys</li>
+            <li>Tab does decent indenting.
+                Thanks to <a href="http://codemirror.net/"
+                             target="_blank">CodeMirror</a> for the text editor.
+            </li>
+            <li>Ctrl-Enter to run, Shift-Enter to run selected</li>
+            <!--
+            <li>F9 to toggle breakpoints</li>
+            <li>F10 to step over</li>
+            <li>F11 to step in</li>
+            <li>Shift-F11 to step out.</li>
+            <li>You can inspect values with e.g. 'print foo' in the
+            &quot;Interactive&quot; box. When debugging, this will
+            execute in the debug context.</li>
+            -->
+        </ul>
+    </div>
+
+    <textarea id="code"> </textarea>
+    <button id="skulpt_run">Run</button>
+    <p><strong>Output:</strong> 
+
+    <pre id="edoutput">
+    </pre>
+    <button id="clearoutput">Clear</button></p>
+    
+    <canvas id="mycanvas" height="400" width="400"
+            style="border-style: solid; display: none"></canvas>
+    
+
+    <h2>Interactive console:</h2>
+    
+    <textarea id="interactive" cols="85" rows="1"></textarea>
+</div>
+<div data-role=footer>
+    <h6>Based on skulpt</h6>
+</div>    
+</body>
+</html>
