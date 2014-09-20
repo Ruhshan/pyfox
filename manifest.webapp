@@ -1,0 +1,19 @@
+{
+  "name": "pyfox",
+  "version": "1.1",
+  "description": "Python coding in firefox os",
+  "launch_path": "/pyfox.html",
+  "permissions": {
+    "storage": {
+      "description": "Create and run python scripts or use python in console."
+    }
+  },
+  "developer": {
+    "name": "Ruhshan Ahmed",
+    "url": "http://about.me/ruhshan"
+  },
+  "icons": {
+    "60": "/python 60.png",
+    "128": "/python 128.png"
+  }
+}
